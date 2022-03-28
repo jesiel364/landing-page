@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1&family=Poppins:ital,wght@0,500;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
 
+@media only screen and (max-device-width: 900px) {
+ header { width:600px; } 
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -27,9 +31,15 @@ body{
 	--fundo-sec: #363636;
 }
 
+<<<<<<< HEAD
 /*header{
 	width: 100%;
 }*/
+=======
+header{
+	/*width: 100%;*/
+}
+>>>>>>> f54d9e3690f754361ff4b858e1e6654f045ce427
 
 .cabecalho {
   padding-top: 20px;
@@ -64,18 +74,43 @@ header{
 
 }
 
+.imagem-div{
+	/*max-width: 600px;*/
+}
+
 .person{
+<<<<<<< HEAD
   height: 100%;
   width: 100%;
   /*margin-top: 40px;*/
 }
 
+=======
+  height: auto;
+  width: auto;
+  /*min-width: auto;*/
+  margin-top: 40px;
+}
+
+section{
+  display: flex;
+  /*flex-direction: row;*/
+  /*width: auto;*/
+>>>>>>> f54d9e3690f754361ff4b858e1e6654f045ce427
 
 
 .secao{
+<<<<<<< HEAD
   column-gap: 10px;
   margin: 10px;
   /*max-width: 50%;*/
+=======
+  display: block;
+  flex-direction: column;
+  column-gap: 10px;
+  margin: 10px;
+  width: auto;
+>>>>>>> f54d9e3690f754361ff4b858e1e6654f045ce427
 }
 
 .about{
