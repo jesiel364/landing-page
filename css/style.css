@@ -13,6 +13,7 @@ a{
 
 body{
 	font-family: 'Roboto', sans-serif;
+	background-color: #333333;
 }
 
 :root{
@@ -20,31 +21,34 @@ body{
 	--secondary_color: #4F5FE5;
 	--text_light: #E7E7E7;
 	--text_dark: #1C1C1C;
+	--fundo: #333333;
 }
 
 .cabecalho {
   padding-top: 20px;
+  padding-bottom: 20px;
 	display: flex;
 	flex-direction: column;
-	height: 200px;
+	height: auto;
 	color: var(--text_light);
 	align-items: start;
 	padding-left: 20px;
 	gap: 20px;
-	max-width: 300px;
+	/**max-width: 300px;**/
 	
 }
 
 .ola{
-	color: var(--primary_color);
-	background-color: var(--text_light);
-	border-radius: 10px;
+	color: var(--secondary_color);
+	background-color: var(--fundo);
+	border-radius: 5px;
 	padding: 5px;
 	font-display: "Roboto", sans-serif;
+
 }
 
 header{
-	height: 320px;
+	/**height: 320px;**/
 	background-image: linear-gradient(to right ,var(--primary_color), var(--secondary_color));
 }
 
@@ -68,37 +72,79 @@ section{
 
 .about{
   margin-bottom: 10px;
-  color: var(--text_dark);
+  color: var(--text_light);
   font-family: 'Roboto', sans-serif;
   font-size: 24px;
   font-weight: 500;
-  margin-top: 20px;
+  margin-top: 30px;
+  
 }
 
 .subtitulo{
-  color: var(--secondary_color);
-  margin-bottom: 10px;
+  color: var(--text_light);
+  margin-bottom: 20px;
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
   font-size: 34px;
 }
 
 .info{
-  
+  color: var(--text_light);
   display: flex;
   flex-direction: row;
   gap: 10px;
   margin-bottom: 10px;
 }
 
+#info2{
+  padding-bottom:40px;
+}
+
 p{
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 20px;
+  color: var(--text_light);
+  margin-right: 5px;
 }
 
 h1, h2, h3{
   font-family: 'Roboto', sans-serif;
   font-size: 38px;
   font-weight: 800;
+  color: var(--text_light);
+}
+
+.icones{
+  width: 100%;
+  color: var(--text_light);
+  display: flex;
+  justify-items: space-around;
+  gap: 10px;
+  align-content: center;
+}
+
+.secao2{
+  padding-left: 10px;
+  padding-top:30px;
+}
+
+.we-go{
+  margin-bottom:10px;
+  margin-top: 30px;
+  color: var(--text_light);
+	/**background-color: var(--primary_color);**/
+	border-radius: 5px;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.sub4{
+  padding-bottom:20px;
+}
+
+.secao2{
+  padding-top: 10px;
+  padding-bottom: 30px;
+  background-image: linear-gradient(to right ,var(--primary_color), var(--secondary_color));
 }
