@@ -15,7 +15,7 @@ a{
 body{
 	font-family: 'Roboto', sans-serif;
 	background-color: #333333;
-	max-width: 1600px;
+	/*max-width: 1600px;*/
 }
 
 :root{
@@ -23,12 +23,13 @@ body{
 	--secondary_color: #4F5FE5;
 	--text_light: #E7E7E7;
 	--text_dark: #1C1C1C;
-	--fundo: #333333;
+	--fundo: #282828;
+	--fundo-sec: #363636;
 }
 
-header{
+/*header{
 	width: 100%;
-}
+}*/
 
 .cabecalho {
   padding-top: 20px;
@@ -41,52 +42,47 @@ header{
 	padding: 40px;
 	gap: 20px;
 	/**max-width: 300px;**/
-	max-width: 800px;
+	max-width: 600px;
 	
 }
 
 .ola{
-	color: var(--secondary_color);
+	color: var(--text_light);
 	background-color: var(--fundo);
 	border-radius: 5px;
 	padding: 5px;
 	font-display: "Roboto", sans-serif;
+	font-weight: 800;
 
 }
 
 header{
 	/**height: 320px;**/
-	background-image: linear-gradient(to right ,var(--primary_color), var(--secondary_color));
+	background: #de6161;   fallback for old browsers 
+	background: -webkit-linear-gradient(to right, #2657eb, #de6161);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #1730FF, #de6161); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .person{
-  height: auto;
-  max-width: 50%;
-  margin-top: 40px;
+  height: 100%;
+  width: 100%;
+  /*margin-top: 40px;*/
 }
 
-section{
-  display: flex;
-  /*flex-direction: row;*/
 
-
-  
-}
 
 .secao{
-  display: flex;
-  flex-direction: column;
   column-gap: 10px;
   margin: 10px;
-  max-width: 50%;
+  /*max-width: 50%;*/
 }
 
 .about{
   margin-bottom: 10px;
   color: var(--text_light);
   font-family: 'Roboto', sans-serif;
-  font-size: 24px;
-  font-weight: 500;
+
   margin-top: 30px;
   
 }
@@ -146,10 +142,10 @@ h1, h2, h3{
   margin-bottom:10px;
   margin-top: 30px;
   color: var(--text_light);
-	/**background-color: var(--primary_color);**/
-	border-radius: 5px;
-  padding: 5px;
-  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+	width: 150px;
+	
+}
 }
 
 .sub4{
@@ -157,7 +153,28 @@ h1, h2, h3{
 }
 
 .secao2{
+	/*max-width: 100%;*/
   padding-top: 10px;
   padding-bottom: 30px;
-  background-image: linear-gradient(to right ,var(--primary_color), var(--secondary_color));
+	background: #de6161;   fallback for old browsers 
+	background: -webkit-linear-gradient(to right, #2657eb, #de6161);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #1730FF, #de6161); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */}
+
+
+.we-go, .ola, .about {
+	box-shadow: 4;
+	background-color: var(--fundo);
+	border-radius: 5px;
+	padding: 5px;
+	text-align: center;
+	  font-size: 24px;
+  font-weight: 500;
+}
+
+.about{
+	
+	
+	font-display: "Roboto", sans-serif;
+	width: 130px;
+	text-align: center;
 }
