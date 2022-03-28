@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1&family=Poppins:ital,wght@0,500;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
 
+@media only screen and (max-device-width: 900px) {
+ header { width:600px; } 
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -27,7 +31,7 @@ body{
 }
 
 header{
-	width: 100%;
+	/*width: 100%;*/
 }
 
 .cabecalho {
@@ -59,26 +63,32 @@ header{
 	background-image: linear-gradient(to right ,var(--primary_color), var(--secondary_color));
 }
 
+.imagem-div{
+	/*max-width: 600px;*/
+}
+
 .person{
   height: auto;
-  max-width: 50%;
+  width: auto;
+  /*min-width: auto;*/
   margin-top: 40px;
 }
 
 section{
   display: flex;
   /*flex-direction: row;*/
+  /*width: auto;*/
 
 
   
 }
 
 .secao{
-  display: flex;
+  display: block;
   flex-direction: column;
   column-gap: 10px;
   margin: 10px;
-  max-width: 50%;
+  width: auto;
 }
 
 .about{
